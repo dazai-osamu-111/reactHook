@@ -163,4 +163,4 @@ function ProductPage({ productId, referrer, theme }) {
 }
 ```
 
-Bằng cách gói handleSubmit trong useCallback, bạn đảm bảo rằng function đó giống nhau giữa các lần kết xuất lại (cho đến khi các yếu tố phụ thuộc thay đổi). Bạn không cần phải ngắt một hàm trong useCallback trừ khi bạn làm điều đó vì một số lý do cụ thể. Trong ví dụ này, lý do là bạn truyền nó tới một được bọc trong memo và điều này cho phép nó bỏ qua việc render lại. Có những lý do khác mà bạn có thể cần sử dụngCallback được mô tả thêm trên trang này.
+Bằng cách gói handleSubmit trong useCallback, bạn đảm bảo rằng function đó giống nhau giữa các lần render lại (cho đến khi các yếu tố phụ thuộc thay đổi). Bạn không cần phải ngắt một hàm trong useCallback trừ khi bạn làm điều đó vì một số lý do cụ thể. Trong ví dụ này, lý do là bạn truyền nó tới một được bọc trong memo và điều này cho phép nó bỏ qua việc render lại. Có những lý do khác mà bạn có thể cần sử dụngCallback được mô tả thêm trên trang này.
